@@ -143,7 +143,7 @@ section[id]{scroll-margin-top:76px}
 
 /* Divisions (home) */
 .divisions{background:linear-gradient(180deg,var(--ice),var(--ice-2))}
-.div-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:start}
+.div-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:stretch}
 .div-card{background:var(--white);border-radius:22px;overflow:hidden;box-shadow:0 26px 50px -36px rgba(10,37,89,.6);min-width:0}
 .div-top{display:flex;align-items:center;gap:16px;padding:24px 28px;color:#fff;background:linear-gradient(120deg,var(--navy-900),var(--navy))}
 .div-card.biz .div-top{background:linear-gradient(120deg,var(--gold-deep),var(--gold))}
@@ -164,6 +164,11 @@ section[id]{scroll-margin-top:76px}
 .link-arrow:hover svg{transform:translateX(4px)}
 @media (max-width:960px){.div-grid{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:560px){.div-list{grid-template-columns:1fr}}
+
+.div-card{display:flex;flex-direction:column}
+.div-list{flex:1;align-content:start}
+.div-card:not(.biz) .div-list li:last-child{grid-column:1/-1}
+@media (max-width:960px){.div-grid{align-items:start}}
 
 /* Why */
 .why-sec{background:linear-gradient(180deg,var(--amber-tint),#fff8ec)}
