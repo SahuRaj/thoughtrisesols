@@ -16,3 +16,4 @@ Each page carries its own styles in `<style>` (brand colours and fonts are in th
 **Enquiry form:** Netlify Forms, form name `enquiry`. Enable form detection, redeploy once, then add an email notification.
 **Contact used:** +91 70132 42801 (Call / WhatsApp), office@thoughtrisesols.com, Visakhapatnam, Andhra Pradesh. Hours: Mon–Sat, 10 AM – 5 PM.
 **Domain:** thoughtrisesols.com
+**Social:** LinkedIn and Instagram links are in the contact section ("Follow us") and the footer.

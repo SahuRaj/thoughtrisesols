@@ -332,6 +332,16 @@ form.card .btn{justify-content:center;width:100%}
 /* form consent */
 .consent{font-size:.82rem;color:rgba(255,255,255,.7);text-align:center}
 
+/* social links */
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.soc{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:#fff;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.soc svg{width:20px;height:20px}
+.soc:hover{transform:translateY(-2px);box-shadow:0 10px 20px -10px rgba(0,0,0,.6)}
+.s-li{background:#0a66c2}.s-ig{background:linear-gradient(45deg,#f9a03f,#e1306c 50%,#833ab4)}
+.follow{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.follow > span{font-family:var(--f-display);font-weight:600;color:var(--navy-900)}
+.socials.foot{margin-top:16px}
+
 /* Footer */
 .footer{background:var(--navy-950);color:rgba(255,255,255,.78);font-size:.93rem}
 .footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px;padding-block:52px 28px}
@@ -483,6 +493,7 @@ form.card .btn{justify-content:center;width:100%}
           <div class="c-item" style="--c:var(--gold-deep)"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><small>Location</small><strong>Visakhapatnam, Andhra Pradesh, India</strong></span></div>
           <div class="c-item" style="--c:#7b5ce0"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><small>Working hours</small><strong>Mon – Sat, 10:00 AM – 5:00 PM</strong></span></div>
         </div>
+        <div class="follow"><span>Follow us</span><div class="socials"><a class="soc s-li" href="https://www.linkedin.com/in/thoughtrise-solutions-896640450/" target="_blank" rel="noopener" aria-label="Thoughtrise Solutions on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4z"/></svg></a><a class="soc s-ig" href="https://www.instagram.com/thoughtrise1/" target="_blank" rel="noopener" aria-label="Thoughtrise Solutions on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a></div></div>
       </div>
       <form class="card" id="enquiry" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
         <input type="hidden" name="form-name" value="enquiry">
@@ -512,6 +523,7 @@ form.card .btn{justify-content:center;width:100%}
       <span class="flogo"><img class="mark" src="images/mark.png" alt=""><img class="word" src="images/word-white.png" alt="Thoughtrise Solutions"></span>
       <p class="tag">Innovate · Publish · Grow</p>
       <p class="about-s">Academic, research, publishing and business support services for academicians and enterprises.</p>
+      <div class="socials foot"><a class="soc s-li" href="https://www.linkedin.com/in/thoughtrise-solutions-896640450/" target="_blank" rel="noopener" aria-label="Thoughtrise Solutions on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4z"/></svg></a><a class="soc s-ig" href="https://www.instagram.com/thoughtrise1/" target="_blank" rel="noopener" aria-label="Thoughtrise Solutions on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a></div>
     </div>
     <div>
       <h4>Services</h4>
@@ -544,7 +556,7 @@ form.card .btn{justify-content:center;width:100%}
   </div>
 </footer>
 <a class="wa" href="https://wa.me/917013242801?text=Hello%20Thoughtrise%20Solutions%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat with Thoughtrise Solutions on WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-2.6-1.6 9.7 9.7 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 0 0 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.5 6.5 0 0 0 1.4 3.4 14.7 14.7 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.4z"/></svg></a>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Thoughtrise Solutions","slogan":"Innovate. Publish. Grow.","description":"Academic, research, publishing and business registration support services.","telephone":"+917013242801","email":"office@thoughtrisesols.com","address":{"@type":"PostalAddress","addressLocality":"Visakhapatnam","addressRegion":"Andhra Pradesh","addressCountry":"IN"},"areaServed":"IN","openingHours":"Mo-Sa 10:00-17:00"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Thoughtrise Solutions","slogan":"Innovate. Publish. Grow.","description":"Academic, research, publishing and business registration support services.","telephone":"+917013242801","email":"office@thoughtrisesols.com","address":{"@type":"PostalAddress","addressLocality":"Visakhapatnam","addressRegion":"Andhra Pradesh","addressCountry":"IN"},"areaServed":"IN","openingHours":"Mo-Sa 10:00-17:00","sameAs":["https://www.linkedin.com/in/thoughtrise-solutions-896640450/","https://www.instagram.com/thoughtrise1/"]}</script>
 <script>
 (function(){var h=document.querySelector('.header'),b=document.querySelector('.menu-btn');if(!h||!b)return;
 b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
