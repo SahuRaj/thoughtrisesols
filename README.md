@@ -7,6 +7,7 @@ Static 3-page website. No framework, no build step, no database.
 | `index.html` | Home: hero, service divisions, why choose us, process, testimonials, about, contact form |
 | `academic.html` | Academic, Research & Publishing Services (11 services) |
 | `business.html` | Business & Registration Support Services (7 services) |
+| `thank-you.html` | Shown after an enquiry if the in-page send falls back to a normal form post |
 | `404.html` | Branded "page not found" page (Netlify uses it automatically) |
 | `images/` | `logo.png` (full logo), `mark.png` (emblem), `word-white.png` (wordmark for dark backgrounds) |
 
