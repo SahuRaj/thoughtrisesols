@@ -251,6 +251,33 @@ section[id]{scroll-margin-top:76px}
 @media (max-width:960px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.svc-grid{grid-template-columns:minmax(0,1fr)}}
 
+/* Research journey (academic page) */
+.journey-sec{background:
+  radial-gradient(circle at 92% 8%,rgba(30,111,217,.35),transparent 45%),
+  radial-gradient(circle at 4% 96%,rgba(247,168,35,.18),transparent 40%),
+  linear-gradient(160deg,var(--navy-900),var(--navy-950))}
+.journey{list-style:none;margin:0;padding:0;display:grid;gap:22px;max-width:920px;position:relative;counter-reset:j}
+.journey::before{content:"";position:absolute;left:41px;top:30px;bottom:30px;width:2px;background:repeating-linear-gradient(to bottom,rgba(247,168,35,.7) 0 6px,transparent 6px 12px)}
+.jstep{position:relative;display:grid;grid-template-columns:84px minmax(0,1fr);gap:24px;align-items:center;counter-increment:j}
+.jstep .ic{position:relative;width:84px;height:84px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;box-shadow:0 0 0 6px var(--c),0 0 0 13px rgba(255,255,255,.06)}
+.jstep:nth-child(odd){--c:var(--gold)}.jstep:nth-child(even){--c:var(--blue)}
+.jstep .ic svg{width:34px;height:34px}
+.jstep .ic::after{content:counter(j,decimal-leading-zero);position:absolute;bottom:-10px;right:-12px;background:var(--gold);color:var(--navy-950);font-family:var(--f-display);font-weight:700;font-size:.8rem;padding:3px 9px;border-radius:999px;box-shadow:0 4px 10px -4px rgba(0,0,0,.5)}
+.jcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px 22px;transition:background .2s ease,border-color .2s ease;min-width:0}
+.jstep:hover .jcard{background:rgba(255,255,255,.1);border-color:rgba(247,168,35,.5)}
+.jcard h3{color:var(--gold);font-size:1.14rem;font-weight:600;margin-bottom:6px}
+.jcard p{color:rgba(255,255,255,.86);font-size:.98rem;line-height:1.6}
+@media (min-width:1000px){
+  .journey-sec .wrap{display:grid;grid-template-columns:.75fr 1.25fr;gap:56px;align-items:start}
+  .journey-sec .sec-head{position:sticky;top:110px;margin-bottom:0}
+}
+@media (max-width:560px){
+  .jstep{grid-template-columns:60px minmax(0,1fr);gap:18px;align-items:start}
+  .jstep .ic{width:60px;height:60px;box-shadow:0 0 0 4px var(--c),0 0 0 9px rgba(255,255,255,.06)}
+  .jstep .ic svg{width:26px;height:26px}
+  .journey::before{left:29px}
+}
+
 /* CTA band */
 .cta{background:linear-gradient(115deg,var(--gold-soft),var(--gold) 55%,var(--gold-deep))}
 .cta .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding-block:clamp(40px,6vw,64px)}
@@ -355,6 +382,7 @@ form.card .btn{justify-content:center;width:100%}
       <div class="svc-grid"><article class="svc"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l5 7-5 13-5-13z"/><circle cx="12" cy="10" r="1.6"/><path d="M12 11.6V17"/></svg></span><h3>Business Logo Designing</h3><p>Professional logo design solutions for startups and businesses.</p></article><article class="svc"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v9h14v-9"/><path d="M10 21v-5h4v5"/></svg></span><h3>Udyam (MSME) Registration</h3><p>Assistance with Micro, Small and Medium Enterprises registration.</p></article><article class="svc"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M9 9l2 2 4-4"/><path d="M8.5 14l-1.5 8 5-3 5 3-1.5-8"/></svg></span><h3>ISO Registration & Certification Assistance</h3><p>Guidance and assistance with applicable ISO registration and certification processes.</p></article><article class="svc"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11a7 7 0 0 1 14 0"/><path d="M3 11h18"/><path d="M12 4v3"/><path d="M7 11a5 5 0 0 0 10 0"/><path d="M5 22a7 7 0 0 1 14 0"/></svg></span><h3>Labour Welfare Registrations</h3><p>Assistance with applicable labour welfare registrations.</p></article><article class="svc"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 7v4a1.5 1.5 0 0 0 3 0V7M10.5 12v5"/><path d="M15 7c-1 1-1 4 0 5v5"/></svg></span><h3>FSSAI Registration</h3><p>Assistance with Food Safety and Standards Authority of India registration.</p></article><article class="svc"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M4 10h16M12 3l9 5H3z"/><path d="M6 10v8M10 10v8M14 10v8M18 10v8"/></svg></span><h3>NITI Aayog Registrations</h3><p>Assistance with relevant NITI Aayog registration processes.</p></article><article class="svc"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><path d="M13 17h8M17 13v8"/></svg></span><h3>Other Registration Services</h3><p>Support with other applicable business and organisational registration requirements.</p></article></div>
     </div>
   </section>
+
 
   <section class="cta">
     <div class="wrap">
